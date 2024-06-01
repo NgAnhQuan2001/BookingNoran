@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1045742384655",
+    "project_id": "bookingnorann",
+    "storage_bucket": "bookingnorann.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045742384655:android:2c23314322f8faf6d5957a",
+        "android_client_info": {
+          "package_name": "com.aqsoft.bookingappnoran"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDor9WwI4EglprAefE7gTP6Kd047sb8_jU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/noran"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/noran"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookingAppNoran"
+        tools:targetApi="31">
+        <activity
+            android:name=".Partner.PartnerVerifyAIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Partner.PartnerNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Partner.PartnerAddRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Partner.PartnerUpdateInfoRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Partner.PartnerListRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Partner.UpdateHotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListHotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PartnerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminThongBaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UpdateInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddHotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.HotelMangerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AI.TestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.ListAccActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User.ConfirmBookActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".User.BookRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User.AppInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User.SelectRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.ThemKhachSanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Verification.DangkiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Verification.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".User.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

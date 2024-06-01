@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF5F5"
+    tools:context=".User.DetailActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ks1">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/recks">
+
+        </ImageView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#80CCCCCC">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back2"
+                    android:layout_gravity="center">
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_height="40dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#80CCCCCC">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/heart"
+                    android:layout_gravity="center">
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nameks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:text="Khách sạn Đông Dương">
+            </TextView>
+            <TextView
+                android:id="@+id/dcks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:text="Bãi biển Waecicu, Labuan Bajo, Quận. Komodo, Nhiếp chính Tây Manggarai, Đội Nusa Tenggara. 86554">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@id/vvs"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/soluongphong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF6666"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:text="Phòng còn lại: 5">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/detail_top_background"
+                android:elevation="3dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3333"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/bedTxt"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bed" />
+
+                    <TextView
+                        android:id="@+id/bedTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:textColor="#575454"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/viewv"
+                    android:layout_width="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="#C5BEBE" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3333"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bath" />
+
+                    <TextView
+                        android:id="@+id/bathTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:textColor="#575454"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="#C5BEBE" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3333"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/wifi" />
+
+                    <TextView
+                        android:id="@+id/wifiTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:textColor="#575454"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Mô tả">
+            </TextView>
+            <TextView
+                android:id="@+id/mota"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#787878"
+                android:layout_height="wrap_content"
+                android:text="Chào mừng bạn đến với thiên đường nghỉ dưỡng, chúng tôi đảm bảo dịch vụ tốt nhất trong suốt thời gian bạn ở Bali với sự chú trọng vào sự thoải mái của khách hàng. Thưởng thức miễn phí các món đặc sản, khiêu vũ và âm nhạc của Bali vào thứ Bảy hàng tuần với mức giá cạnh tranh. Bạn có thể tận hưởng tất cả các tiện nghi tại khu nghỉ dưỡng của chúng tôi">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+        </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_danhgia"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/item_danhgia"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <View
+        android:id="@+id/vvs"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e4e4e4"
+        app:layout_constraintBottom_toTopOf="@id/ggg">
+
+    </View>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ggg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="#787878"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ước tính giá">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tongtien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto"
+                android:text="500.000vnđ/1 đêm"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/custom_button_background"
+                android:elevation="4dp"
+                android:text="Đặt ngay"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

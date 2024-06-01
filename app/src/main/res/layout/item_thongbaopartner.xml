@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="5dp"
+    android:background="@drawable/button_background2">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: Quanchip95@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:visibility="gone"
+                android:src="@drawable/facialrecognition"
+                android:layout_height="30dp">
+
+            </ImageView>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại : 0394309941"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/nameks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khách sạn : "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/loaiphong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại phòng: Basic"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/ngaynhanphong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày nhận phòng: 15/03/2024"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ngaytraphong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày trả phòng 17/03/2024"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tongtien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: 2000000 VND"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

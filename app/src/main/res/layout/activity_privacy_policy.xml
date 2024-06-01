@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bbm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back"
+            android:importantForAccessibility="no"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chính sách bảo mật"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:text="  Ứng dụng Đặt Phòng Khách Sạn BookingRan thu thập thông tin từ người dùng để cung cấp và cải thiện dịch vụ. Loại thông tin thu thập có thể bao gồm:\n
+    - Thông tin cá nhân như tên, địa chỉ email, số điện thoại và địa chỉ.\n
+    - Thông tin thanh toán và giao dịch.\n
+    - Dữ liệu vị trí địa lý khi sử dụng ứng dụng.\n
+    - Thông tin về cách bạn tương tác với ứng dụng, như loại phòng bạn tìm kiếm và đặt.\n
+    \n Thông tin chỉ được chia sẻ với bên thứ ba trong các trường hợp sau:\n
+    - Đối tác khách sạn cho việc xác nhận và hoàn tất đặt phòng.\n
+    - Các nhà cung cấp dịch vụ thanh toán để xử lý giao dịch.\n
+    - Khi có yêu cầu từ cơ quan pháp luật hoặc để bảo vệ quyền và an toàn của Ứng dụng."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:importantForAccessibility="no"
+        android:background="@drawable/custom_edt"/>
+
+</LinearLayout>

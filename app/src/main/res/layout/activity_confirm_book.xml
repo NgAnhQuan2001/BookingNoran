@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Thông tin"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Ngày đến: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/ngayden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10/2/2023 "
+                android:textSize="17sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Ngày đi: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/ngaydi"
+                android:layout_width="wrap_content"
+                android:text="10/2/2023 "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Loại phòng: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/loaiphong"
+                android:layout_width="wrap_content"
+                android:text="Stander"
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Số lượng khách hàng: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/soluongkhachhang"
+                android:layout_width="wrap_content"
+                android:text="5"
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Tên khách sạn: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tenkhachsan"
+                android:layout_width="wrap_content"
+                android:text="KS sài gòn"
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Đia chỉ khách sạn: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/diachikhachsan"
+                android:layout_width="wrap_content"
+                android:text="SG"
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Lưu ý: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/luuy"
+                android:layout_width="wrap_content"
+                android:text="không có "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:text="Tổng tiền: "
+                android:textSize="17sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tongtien"
+                android:layout_width="wrap_content"
+                android:text="194.000VND"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/thanhtoansau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    Thanh toán khi trả phòng"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:id="@+id/zalopay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    ZaloPay"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/momoo"
+                android:drawablePadding="8dp"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Miễn phí khi hủy phòng"
+                android:textSize="14sp" />
+
+
+        </RadioGroup>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lin1">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btn_huyhoadon"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_btn"
+            android:text="Trở về"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_svhoadon"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@drawable/background_btn"
+            android:text="Xác nhận đặt phòng"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

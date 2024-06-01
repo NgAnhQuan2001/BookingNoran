@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/back">
+
+    </ImageView>
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cập nhập thông tin"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="23dp" />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/deleteks"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="end" />
+
+    </Toolbar>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <EditText
+                android:id="@+id/nameacc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Tên"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                android:drawableStart="@drawable/ic_gt"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:id="@+id/emailacc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Email"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/phoneacc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Số điện thoại"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"/>
+
+
+
+            <EditText
+                android:id="@+id/dcacc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Địa chỉ"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                android:drawableStart="@drawable/ic_home"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/gtacc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Giới tính"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"/>
+            <EditText
+                android:id="@+id/matkhau"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Mật khẩu"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"/>
+
+
+            <Spinner
+                android:id="@+id/spinnerUserType"
+                android:drawablePadding="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/spinner_background"
+                android:layout_marginEnd="32dp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <Button
+                android:id="@+id/imageViewloginacc"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_height="60dp"
+                android:text="Cập nhật thông tin"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
